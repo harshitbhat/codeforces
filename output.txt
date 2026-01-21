@@ -1,1 +1,5 @@
-Hello World!
+YES
+YES
+YES
+YES
+NO
