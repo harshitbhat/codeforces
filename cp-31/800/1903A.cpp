@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
@@ -16,15 +17,7 @@ int main()  {
         if (k >= 2) {
             cout << "YES" << endl;
         } else {
-            bool isSorted = true;
-            for(int i = 1; i < n; i++) {
-                if(arr[i] < arr[i - 1]) {
-                    isSorted = false;
-                    break;
-                }
-            }
-
-            cout << (isSorted ? "YES" : "NO") << endl;
+            cout << (is_sorted(arr.begin(), arr.end()) ? "YES" : "NO") << endl;
         }
     }
 }
